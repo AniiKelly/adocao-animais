@@ -28,7 +28,7 @@ class AnimalService {
     
     //Se existir, remove o gato do array
     if (animalIndex === -1) {
-      throw new BadRequestException('O animal não foi encontrado!');
+      throw new BadRequestException('O animal não foi encontrado!!');
     }
     this.animais.splice(animalIndex, 1);
   }
