@@ -23,7 +23,7 @@ class AnimalController {
   }
 
   @Post('/create')
-  create(@Body() animal: CriarAnimal): Animal {
+  create(@Body() animal: CriarAnimal): Animal {    
     return this.animalService.create(animal);
   }
 
